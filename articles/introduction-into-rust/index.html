@@ -5,6 +5,7 @@
         <!-- TODO: use `get_url` -->
         <link rel="stylesheet" href="/css/style.css"/>
         <link rel="stylesheet" href="/line-awesome/css/line-awesome.min.css"/>
+        <link rel="stylesheet" href="/css/custom.css">
         <script src="/js/main.js" defer></script>
         
     <title>introduction into rust | ensignprojects</title>
@@ -68,7 +69,16 @@
                     dark:prose-headings:bg-indigo-900 prose-headings:font-normal
                     dark:prose-headings:text-slate-300 prose-headings:p-2
                     prose-headings:w-max prose-headings:font-serif prose-2xl xl:prose-base">
-            <h1 id="company-support-rust-ecosystem">company support - rust ecosystem</h1>
+            <h1 id="building-a-gui">building a gui</h1>
+<p>If you want to build a gui in rust. Please checkout https://tauri.app, which enables developers to create nice gui applications.</p>
+<h1 id="compilation-speed">compilation speed</h1>
+<p>Often you hear stories about the compilation speed of rust. It is slower than compilation in other language, which is due to the compile checks that are done by the compiler. To get an impression of speed between C++ and rust, <a href="https://quick-lint-js.com/blog/cpp-vs-rust-build-times/">this article</a> describes several situations and comparison in speed.</p>
+<h1 id="which-ide-to-use">which IDE to use</h1>
+<p>I have good experience with Visual Studio Code and with CLion (with rust plugin) as IDEs for rust. If you would like to explore more alternatives, there is a <a href="https://medium.com/cloud-native-the-gathering/whats-the-best-ide-for-developing-in-rust-5087d46006f5">nice article on medium.com</a></p>
+<h1 id="rust-in-the-linux-kernel">rust in the linux kernel</h1>
+<p>The linux kernel has now also parts implemented in rust. On the <a href="https://lore.kernel.org/lkml/202210010816.1317F2C@keescook/">first of October 2022</a> the rust support landed in the kernel for device drivers.</p>
+<p>Read more on the background story on <a href="https://thenewstack.io/rust-in-the-linux-kernel/">new stack</a></p>
+<h1 id="company-support-rust-ecosystem">company support - rust ecosystem</h1>
 <p>In 2021 Mozilla <a href="https://blog.mozilla.org/en/mozilla/mozilla-welcomes-the-rust-foundation/">announced</a> the birth of the rust foundation, which 
 is a good sign with respect to gain industry support for the language.
 This overview is not complete, but the companies I've came across are listed here.</p>
@@ -88,11 +98,15 @@ to check out. Apart from their blog, they also give support on their platform wi
 Microsoft also submitted a <a href="https://crates.io/crates/windows">windows crate</a> to <a href="https://crates.io/">crates.io</a>, this crate
 can be used with the windows gnu toolchain to access the windows API. If you create apps for the windows 
 ecosystem it definitely recommended to check it out. 
+Microsoft also implemented rust in their <a href="https://www.theregister.com/2023/01/13/microsoft_rust_azure_sphere/">Azure Sphere</a> proposition.
 Microsoft offers also free training on their <a href="https://learn.microsoft.com/en-us/windows/dev-environment/rust/">learning platform</a>. </p>
 <h2 id="google-founding-member">Google - founding member</h2>
 <p>Within Google becoming part of the foundation was celebrated and announced on <a href="https://opensource.googleblog.com/2021/02/google-joins-rust-foundation.html">their blog</a>.
 Especially within Google Android the interest is big on rust. They also created a two day introduction
-to rust by the android team. It is worthwhile to <a href="https://google.github.io/comprehensive-rust/welcome.html">check it out</a>.</p>
+to rust by the android team. It is worthwhile to <a href="https://google.github.io/comprehensive-rust/welcome.html">check it out</a>.
+Google also uses rust in the <a href="https://analyticsindiamag.com/rust-users-rejoice-chromium-adds-support-for-the-better-c/">chromium project</a></p>
+<h2 id="discord">Discord</h2>
+<p>Discord decided to switch from golang to rust. In <a href="https://link.medium.com/eM2lXuqRowb">this article</a> they elaborate their arguments for this decision. </p>
 
         </div>
     </div>
